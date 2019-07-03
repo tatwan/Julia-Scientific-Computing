@@ -2,7 +2,9 @@
 
 # Julia Scientific Computing
 
-#### Steps to configure your VSCode to attache to a Docker Container [Julia]
+### Julia + Docker + VSCode 
+
+#### Steps to configure your Visual Studio Code to attach to a Docker Container [Julia]
 
 This assumes you have both VSCode and Docker already installed. For more information on how to install check out:
 
@@ -28,7 +30,7 @@ docker pull julia:1.1
 docker run -name="juliabox" -it julia:1.1
 ```
 
-**option 2 ** if you want to run the container and mount a volume (shared folder) then run
+**option 2** if you want to run the container and mount a volume (shared folder) then run
 
 ```bash
 docker run --name="juliabox" -it -v <your local path>:/home/ julia:1.1
